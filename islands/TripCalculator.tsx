@@ -72,6 +72,7 @@ export default function TripCalculator() {
         </div>
       </div>
 
+      {/* Single Input Mode */}
       {mode === "single" && (
         <div class="bg-white rounded-xl p-6 shadow-md">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -138,6 +139,7 @@ export default function TripCalculator() {
         </div>
       )}
 
+      {/* Batch Input Mode */}
       {mode === "batch" && (
         <div class="bg-white rounded-xl p-6 shadow-md">
           <div class="mb-6">
@@ -146,7 +148,7 @@ export default function TripCalculator() {
             </label>
             <textarea
               class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all h-40 font-mono text-sm"
-              placeholder="100,1000,1,1000\n200,2000,2,1500\n300,3000,1.5,2000"
+              placeholder={"100,1000,1,1000\n200,2000,2,1500\n300,3000,1.5,2000"}
               value={batchInput}
               onInput={(e) => setBatchInput(e.currentTarget.value)}
             />
