@@ -1,4 +1,4 @@
-# Horse cart in the desert carrying nuts project
+# Horse cart in the desert carrying nuts
 
 Project to illustrate the common camel-banana problem, in this case with a horse and nuts, using a simple Deno-based interface. 
 
